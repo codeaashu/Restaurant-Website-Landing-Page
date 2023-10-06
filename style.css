@@ -1,0 +1,233 @@
+/* =============== GOOGLE FONTS ================== */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* Credit - youtube.com/@ashutoshpython  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Lobster', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 74px;
+    gap: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #071c35;
+    transition: 0.5s ease;
+}
+
+nav a:nth-child(1) {
+    color: #ee2737;
+}
+
+nav a:hover {
+    color: #ee2737;
+}
+
+#right-area {
+    height: 100%;
+}
+
+#right-area img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+#right-area .landing-imgs img:nth-child(1) {
+    position: absolute;
+    top: 29%;
+    animation: animate 7s infinite;
+}
+
+#right-area .landing-imgs img:nth-child(2) {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    right: 0.5%;
+    animation: animate 7s infinite;
+}
+
+#right-area .landing-imgs img:nth-child(3) {
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    animation: animate2 7s infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    75% {
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-15px);
+    }
+    50% {
+        transform: translate(-8px);
+    }
+    75% {
+        transform: translate(-15px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+#left-area {
+    width: 50%;
+    margin-top: 50px;
+}
+
+#left-area h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#left-area h1::selection {
+    color: #fff;
+    background-color: #ee2737;
+}
+
+span {
+    font-family: 'Lobster', sans-serif;
+    color: #ee2737;
+}
+
+span::selection {
+    color: #fff;
+    background-color: #ee2737;
+}
+
+#left-area p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+#left-area p::selection {
+    color: #fff;
+    background-color: #ee2737;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ee2737;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 5px 30px 0px rgba(238, 39, 55, 0.2);
+    transition: 0.5s ease;
+}
+
+.buttons button:nth-child(1) {
+    background-color: #ee2737;
+    margin-right: 30px;
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: transparent;
+    color: #ee2737;
+}
+
+.buttons button:nth-child(2) {
+    color: #ee2737;
+}
+
+.buttons button:nth-child(2):hover {
+    color: #fff;
+    background-color: #ee2737;
+}
+
+.icons {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.icons .icon-box {
+    width: 78px;
+    height: 78px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 39, 55, 0.1);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.icons .icon-box:hover {
+    background-color: #ee2737;
+}
+
+.icons .icon-box:hover .fa-solid {
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.icons .icon-box .fa-solid {
+    font-size: 30px;
+    color: #ee2737;
+}
